@@ -94,6 +94,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.lblNombreUsuario = new System.Windows.Forms.Label();
             this.lblCodigoUsuario = new System.Windows.Forms.Label();
+            this.historialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -302,7 +303,7 @@
             this.pacienteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ultimaVisitaToolStripMenuItem});
             this.pacienteToolStripMenuItem.Name = "pacienteToolStripMenuItem";
-            this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
+            this.pacienteToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.pacienteToolStripMenuItem.Text = "Paciente";
             // 
             // ultimaVisitaToolStripMenuItem
@@ -318,7 +319,7 @@
             this.tiposToolStripMenuItem,
             this.disponibilidadToolStripMenuItem});
             this.examenToolStripMenuItem.Name = "examenToolStripMenuItem";
-            this.examenToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
+            this.examenToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.examenToolStripMenuItem.Text = "Examen";
             this.examenToolStripMenuItem.Click += new System.EventHandler(this.examenToolStripMenuItem_Click);
             // 
@@ -339,7 +340,7 @@
             // correoToolStripMenuItem
             // 
             this.correoToolStripMenuItem.Name = "correoToolStripMenuItem";
-            this.correoToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
+            this.correoToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.correoToolStripMenuItem.Text = "Correo";
             this.correoToolStripMenuItem.Click += new System.EventHandler(this.correoToolStripMenuItem_Click);
             // 
@@ -347,9 +348,10 @@
             // 
             this.clientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registroClientesToolStripMenuItem,
-            this.fechaToolStripMenuItem});
+            this.fechaToolStripMenuItem,
+            this.historialToolStripMenuItem});
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
-            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(145, 24);
+            this.clientesToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.clientesToolStripMenuItem.Text = "Clientes";
             // 
             // registroClientesToolStripMenuItem
@@ -369,7 +371,7 @@
             // sbmCotizacion
             // 
             this.sbmCotizacion.Name = "sbmCotizacion";
-            this.sbmCotizacion.Size = new System.Drawing.Size(145, 24);
+            this.sbmCotizacion.Size = new System.Drawing.Size(152, 24);
             this.sbmCotizacion.Text = "Cotizacion";
             this.sbmCotizacion.Click += new System.EventHandler(this.sbmCotizacion_Click);
             // 
@@ -653,6 +655,13 @@
             this.lblCodigoUsuario.Text = "Usuario:";
             this.lblCodigoUsuario.Visible = false;
             // 
+            // historialToolStripMenuItem
+            // 
+            this.historialToolStripMenuItem.Name = "historialToolStripMenuItem";
+            this.historialToolStripMenuItem.Size = new System.Drawing.Size(189, 24);
+            this.historialToolStripMenuItem.Text = "Historial";
+            this.historialToolStripMenuItem.Click += new System.EventHandler(this.historialToolStripMenuItem_Click);
+            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -750,5 +759,6 @@
         private System.Windows.Forms.Label lblUsuario;
         public System.Windows.Forms.Label lblNombreUsuario;
         public System.Windows.Forms.Label lblCodigoUsuario;
+        private System.Windows.Forms.ToolStripMenuItem historialToolStripMenuItem;
     }
 }

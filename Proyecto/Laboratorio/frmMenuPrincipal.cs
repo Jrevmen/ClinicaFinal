@@ -381,5 +381,13 @@ namespace Laboratorio
             frmCotizacion ver = new frmCotizacion();
             ver.Show();
         }
+
+        private void historialToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmReportePaciente ver = new frmReportePaciente();
+            ver.MdiParent = this;
+            pictureBox1.Visible = false;
+            ver.Show();
+        }
     }
 }

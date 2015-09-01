@@ -169,6 +169,7 @@ namespace Laboratorio
                             cmbHora.Text = cmbMinutos.Text = cmbPaciente.Text = cmbEmpleado.Text = cmbSucursal.Text = "";
                                                         
                             frmServiciosCita ver = new frmServiciosCita();
+                            ver.MdiParent = this.MdiParent;
                             ver.txtNombrePaciente.Text = cmbPaciente.SelectedItem.ToString();
                             ver.sFecha = dtpCitas.Text;
                             ver.sCodigoPacienteFactura = sCodigoPaciente;

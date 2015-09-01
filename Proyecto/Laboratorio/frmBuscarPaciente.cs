@@ -145,6 +145,13 @@ namespace Laboratorio
                 ver.MdiParent = this.MdiParent;
                 ver.Show();
             }
+            else if (sFramePadre == "frmReportePaciente")
+            {
+                frmReportePaciente ver = new frmReportePaciente();
+                ver.cmbPersona.Text = grdPaciente.Rows[grdPaciente.CurrentCell.RowIndex].Cells[0].Value + ". " + grdPaciente.Rows[grdPaciente.CurrentCell.RowIndex].Cells[1].Value;
+                ver.MdiParent = this.MdiParent;
+                ver.Show();
+            }
             this.Close();
         }
 
@@ -193,6 +200,13 @@ namespace Laboratorio
                 ver.dtpCitas.Text = sFecha;
                 ver.cmbHora.Text = sHora;
                 ver.cmbMinutos.Text = sMinuto;
+                ver.MdiParent = this.MdiParent;
+                ver.Show();
+            }
+            else if (sFramePadre == "frmReportePaciente")
+            {
+                frmReportePaciente ver = new frmReportePaciente();
+                ver.cmbPersona.Text = sPaciente;
                 ver.MdiParent = this.MdiParent;
                 ver.Show();
             }
